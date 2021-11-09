@@ -35,7 +35,7 @@ class fragment_update : Fragment() {
             var newnote=ed1.text.toString()
             if (newnote.isNotEmpty()) {
                MyViewModel.updateNote(Note(sh.getInt("ID",0), ed1.text.toString()))
-                ed1.text.clear()
+//                ed1.text.clear()
                 ed1.clearFocus()
                 Navigation.findNavController(view).navigate(R.id.action_fragment_update_to_fragment_note)
             }
